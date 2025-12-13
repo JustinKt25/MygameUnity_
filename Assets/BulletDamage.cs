@@ -9,13 +9,14 @@ public class BulletDamage : MonoBehaviour
     
     void OnTriggerEnter2D(Collider2D other)
     {
-        
-        Enemyscript enemy = other.GetComponent<Enemyscript>();
+        Debug.Log("Tabrakan terdeteksi dengan: " + other.gameObject.name);
 
-        if (enemy != null)
+        Enemyscript enemy1 = other.GetComponent<Enemyscript>();
+
+        if (enemy1 != null)
         {
             
-            enemy.TakeDamage(damageAmount);
+            enemy1.TakeDamage(damageAmount);
 
             
             Destroy(gameObject);
