@@ -7,10 +7,9 @@ public class Enemyscript : MonoBehaviour
 {
         
         public float movespeed = 3f;
-        
         public int health = 10;
 
-        private Transform player;
+        private Transform Player;
         private Rigidbody2D rb;
 
         void Start()
@@ -18,9 +17,9 @@ public class Enemyscript : MonoBehaviour
             rb = GetComponent<Rigidbody2D>();
 
             
-            player = GameObject.FindWithTag("Player")?.transform;
+            Player = GameObject.FindWithTag("Player")?.transform;
 
-            if (player == null)
+            if (Player == null)
             {
                 Debug.LogError("Player not found in the scene. Make sure the player GameObject has the 'Player' tag assigned.");
             }
@@ -28,9 +27,9 @@ public class Enemyscript : MonoBehaviour
 
         void FixedUpdate()
         {
-            if (player != null)
+            if (Player != null)
             {
-                Vector2 direction = (player.position - transform.position).normalized;
+                Vector2 direction = (Player.position - transform.position).normalized;
                 rb.velocity = direction * movespeed;
 
                 
@@ -45,11 +44,11 @@ public class Enemyscript : MonoBehaviour
             health -= damage; 
             if (health <= 0)
             {
-                Die();
+                die();
             }
         }
 
-        void Die()
+        void die()
         {
             
             Destroy(gameObject);
