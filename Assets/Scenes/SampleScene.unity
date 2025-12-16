@@ -470,7 +470,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 2.35, y: 2.14}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -520,8 +520,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.78867924, g: 0.28422216, b: 0.28422216, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 7dd13e335fc3ab84fa17833059c992f4, type: 3}
+  m_Color: {r: 0.9924528, g: 0.11797076, b: 0.11797076, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -729,12 +729,20 @@ PrefabInstance:
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4427839560271344227, guid: 930fec7bcf8a922429d03b47035135f2, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.51692003
+      objectReference: {fileID: 0}
+    - target: {fileID: 4427839560271344227, guid: 930fec7bcf8a922429d03b47035135f2, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.58416307
+      objectReference: {fileID: 0}
+    - target: {fileID: 4427839560271344227, guid: 930fec7bcf8a922429d03b47035135f2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.72
+      value: -6.59
       objectReference: {fileID: 0}
     - target: {fileID: 4427839560271344227, guid: 930fec7bcf8a922429d03b47035135f2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.22
+      value: 0.61
       objectReference: {fileID: 0}
     - target: {fileID: 4427839560271344227, guid: 930fec7bcf8a922429d03b47035135f2, type: 3}
       propertyPath: m_LocalPosition.z
@@ -768,6 +776,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5899111769057300085, guid: 930fec7bcf8a922429d03b47035135f2, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: ebfca94ed5d6e5d42820cf2066c2ee35, type: 3}
     - target: {fileID: 7569602806298623555, guid: 930fec7bcf8a922429d03b47035135f2, type: 3}
       propertyPath: m_Name
       value: Enemy 1
@@ -794,5 +806,5 @@ SceneRoots:
   - {fileID: 519420032}
   - {fileID: 619394802}
   - {fileID: 1749984845}
-  - {fileID: 2137317078}
   - {fileID: 1431649005}
+  - {fileID: 2137317078}
